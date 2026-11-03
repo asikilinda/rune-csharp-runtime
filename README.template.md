@@ -1,6 +1,6 @@
 [![FINOS - Incubating](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-incubating.svg)](https://community.finos.org/docs/governance/lifecycle-stages/incubating)
 
-# {PROJECT_NAME}
+# Rune CSharp Runtime
 
 Short blurb about what your project does.
 
@@ -42,24 +42,25 @@ List the roadmap steps; alternatively link the Confluence Wiki page where the pr
 3. ....
 
 ## Contributing
-For any questions, bugs or feature requests please open an [issue](https://github.com/finos/{PROJECT_SLUG}/issues)
-For anything else please send an email to {PROJECT_MAILING_LIST}.
 
-To submit a contribution:
-1. Fork it (<https://github.com/finos/{PROJECT_SLUG}/fork>)
+We welcome contributions! Please follow these steps to get started:
+
+1. Fork the repository (<https://github.com/finos/rune-python-generator/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Read our [contribution guidelines](CONTRIBUTING.md) and [Community Code of Conduct](https://www.finos.org/code-of-conduct)
+3. Read our [contribution guidelines](.github/CONTRIBUTING.md) and [Community Code of Conduct](https://www.finos.org/code-of-conduct)
 4. Commit your changes (`git commit -am 'Add some fooBar'`)
 5. Push to the branch (`git push origin feature/fooBar`)
-6. Create a new Pull Request
+6. Create a new Pull Request: the intention is to ensure that Main is always production ready and matches a release.
+   - Simple / short running changes : the PR should be to Main
+   - Complex / long running changes: the recommendation is to complete all the changes in a staging branch, such as Develop or another branch of your choosing.  Once the change is complete and passes all tests, then raise the PR to main from your staging branch.
 
-_NOTE:_ Pull requests must follow this repository’s contribution policy. FINOS projects typically use **DCO** (signed commits) and/or **CLA** via [EasyCLA](https://community.finos.org/docs/governance/Software-Projects/easycla), depending on configuration. Read [FINOS Contribution Requirements](https://community.finos.org/docs/governance/Software-Projects/contribution-compliance-requirements) and the [Technical Charter](technical-charter.pdf) example referenced from [CONTRIBUTING.md](CONTRIBUTING.md) before contributing.
+**NOTE: FINOS repositories require an executed and active FINOS Individual Contributor License Agreement (ICLA) or an executed and active FINOS Corporate Contribution License Agreement (CCLA). The FINOS Clabot tool (or EasyCLA) will flag and block commits from individuals not covered. Please note that some CCLAs require individuals/employees to be explicitly named on the CCLA.**
 
-*Questions about CLA, DCO, or EasyCLA? Email [help@finos.org](mailto:help@finos.org)*
+If you are unsure if you are covered under an existing CCLA send an email to <help@finos.org>
 
 ## License
 
-Copyright {YYYY} {NAME_OF_COPYRIGHT_OWNER}
+Copyright 2026 FINOS
 
 Distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
